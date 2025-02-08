@@ -10,12 +10,28 @@ body {
     height: 40px;
 }
 
+#reflexiones, #predicas, #contenedor_anuncios{
+        scroll-margin-top:120px; 
+    
+}   
+
+
+#header_container {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
+
+
 
 
 /*banner*/
 
 
 #banner {
+    margin-top: 56px;
     background-image: url("./img/martes.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -31,11 +47,60 @@ body {
 
 
 
+@media(max-width: 508px) {
+
+
+    #banner { 
+        margin-top: 104px;
+    }
+
+}
+
+.nav-pills{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_redes {
+    position: fixed;
+    width: 100%;
+    height: max-content;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10000;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    padding: 0px;
+}
+
+
+.redes {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes a {
+    margin: 5px;
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 20%;
+}
+
+
 
 #miercoles_grupo,
 #sabado_pre,
 #sabado_jovenes,
-#domingo_oracion, 
+#domingo_oracion,
 #domingo_general {
     background-position: center;
     background-repeat: no-repeat;
@@ -48,19 +113,23 @@ body {
 
 
 
-#miercoles_grupo{
+#miercoles_grupo {
     background-image: url("./img/ccpv\ \(18\).jpeg");
 }
-#sabado_pre{
+
+#sabado_pre {
     background-image: url("./img/ccpv\ \(10\).jpeg");
 }
-#sabado_jovenes{
+
+#sabado_jovenes {
     background-image: url("./img/ccpv\ \(4\).jpeg");
 }
-#domingo_general{
+
+#domingo_general {
     background-image: url("./img/ccpv\ \(2\).jpeg");
 }
-#domingo_oracion{
+
+#domingo_oracion {
     background-image: url("./img/ccpv\ \(19\).jpeg");
 }
 
@@ -130,32 +199,37 @@ body {
 }
 
 
-.swiper-slide  .card{transition: all 1s;}
-.swiper-slide  .card:hover{
+.swiper-slide .card {
+    transition: all 1s;
+}
+
+.swiper-slide .card:hover {
     scale: 1.02;
     transition: all 1s;
 }
 
 
-.swiper-slide{
+.swiper-slide {
     height: 300px;
 }
 
-.swiper-slide .card{
+.swiper-slide .card {
     height: 100%;
     position: relative;
 }
 
-.swiper-slide h1, p, button {
+.swiper-slide h1,
+p,
+button {
     position: relative;
     z-index: 100;
 }
 
-.swiper-slide .card-body{
+.swiper-slide .card-body {
     height: 100%;
 }
 
-.sombra{
+.sombra {
     background-color: #35353552;
     height: 100%;
     width: 100%;
@@ -164,12 +238,14 @@ body {
     z-index: 0;
 }
 
-#banner h1, #banner p, #banner div{
+#banner h1,
+#banner p,
+#banner div {
     position: relative;
     z-index: 10;
 }
 
-#banner .sombra{
+#banner .sombra {
     top: 0px;
     z-index: 0;
     position: absolute;
@@ -191,14 +267,18 @@ body {
     white-space: nowrap;
     position: relative;
 }
+
 .gallery_move {
     display: flex;
-    width: 200%; /* El doble para efecto infinito */
-    animation: scrollGallery 50s linear infinite; /* Aumentamos la duración a 20s para hacerlo más lento */
+    width: 200%;
+    /* El doble para efecto infinito */
+    animation: scrollGallery 50s linear infinite;
+    /* Aumentamos la duración a 20s para hacerlo más lento */
 }
 
 .gallery_move .controll_img_galery {
-    min-width: 400px; /* Tamaño fijo */
+    min-width: 400px;
+    /* Tamaño fijo */
     height: 400px;
     overflow: hidden;
     margin: 5px;
@@ -213,10 +293,12 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 @keyframes scrollGallery {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-203%);
     }
@@ -347,75 +429,76 @@ audio::-webkit-media-controls-panel {
     max-height: 90%;
     border-radius: 10px;
     border-radius: 0px;
-    
+
 }
 
 
-@media(max-width: 991px){
-    
+@media(max-width: 991px) {
+
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0px;
     }
 
-    .img_mas{
+    .img_mas {
         display: none;
     }
 }
 
-@media(max-width: 767px){
-    
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px;
-}
+@media(max-width: 767px) {
 
-.gallery img {
-    width: 100%;
-    height: 200px;
-}
-
-.gallery_move {
-    animation: scrollGallery 50s linear infinite; /* Aumentamos la duración a 20s para hacerlo más lento */
-}
-
-@keyframes scrollGallery {
-    from {
-        transform: translateX(0);
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
     }
-    to {
-        transform: translateX(-750%);
+
+    .gallery img {
+        width: 100%;
+        height: 200px;
     }
+
+    .gallery_move {
+        animation: scrollGallery 50s linear infinite;
+        /* Aumentamos la duración a 20s para hacerlo más lento */
+    }
+
+    @keyframes scrollGallery {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-750%);
+        }
+    }
+
+
+    #contenedor_anuncios {
+        bottom: -263px;
+    }
+
 }
 
 
-#contenedor_anuncios {
-    bottom: -263px;
-}
-
-}
-
-
-#reflexiones{
+#reflexiones {
     height: max-content;
 }
 
 
-#reflexiones .swiper-slide{
+#reflexiones .swiper-slide {
     height: max-content;
 }
 
-.container_info_adiccional{
+.container_info_adiccional {
     width: 50%;
     height: auto;
     background-color: #007bff;
 }
 
-.info_adiccional{
+.info_adiccional {
     width: 100%;
     margin: auto;
-    
-}
 
+}
