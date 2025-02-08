@@ -287,6 +287,10 @@ button {
     align-items: center;
 }
 
+.controll_img_galery {
+    position: relative;
+}
+
 .gallery_move img {
     flex-shrink: 0;
     width: 100%;
@@ -432,6 +436,12 @@ audio::-webkit-media-controls-panel {
 
 }
 
+.click_img{
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+    animation: click 1s linear infinite;
+}
 
 @media(max-width: 991px) {
 
@@ -441,9 +451,14 @@ audio::-webkit-media-controls-panel {
         padding: 0px;
     }
 
-    .img_mas {
+    .img_mas{
         display: none;
     }
+
+   
+    
+
+
 }
 
 @media(max-width: 767px) {
@@ -501,4 +516,18 @@ audio::-webkit-media-controls-panel {
     width: 100%;
     margin: auto;
 
+}
+
+
+
+
+
+@keyframes click {
+    from {
+        scale: 1.5;
+    }
+
+    to {
+        scale: 1;
+    }
 }
