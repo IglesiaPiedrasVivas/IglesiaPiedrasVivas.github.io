@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./img/ccpv.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Agrega los estilos de Swiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -16,7 +17,8 @@
 
 <body>
 
-    <div class="container-fluid bg-white">
+
+    <div class="container-fluid bg-white" id="header_container">
         <!--HEADER-->
         <header class="container d-flex flex-wrap justify-content-center px-0 py-2">
             <a href="/"
@@ -26,12 +28,22 @@
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link text-black" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-black p-1" aria-current="page"><i class="bi bi-house-heart-fill mx-1"></i>Inicio</a></li>
+                <li class="nav-item"><a href="#contenedor_anuncios" class="nav-link text-black p-1"><i class="bi bi-alarm-fill mx-1"></i>Horarios</a></li>
+                <li class="nav-item"><a href="#predicas" class="nav-link text-black p-1"><i class="bi bi-mic-fill mx-1"></i>Predicas</a></li>
+                <li class="nav-item"><a href="#reflexiones" class="nav-link text-black p-1"><i class="bi bi-bookmark-heart mx-1"></i>Reflexion</a></li>
             </ul>
         </header>
+    </div>
+
+    <div class="container-fluid bg-dark container_redes p-0">
+        <div class="container p-0">
+            <div class="redes">
+                <a href=""><i class="bi bi-facebook text-light fs-5"></i></a>
+                <a href=""><i class="bi bi-instagram text-light fs-5"></i></a>
+                <a href=""><i class="bi bi-youtube text-light fs-5"></i></a>
+            </div>
+        </div>
     </div>
 
 
@@ -41,7 +53,8 @@
                 <div class="sombra"></div>
                 <h1 class="display-4 fw-bold fs-0 ">Centro Cristiano Piedras Vivas</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4 fs-4 fw-bold">Quickly design and customize responsive mobile-first sites with Bootstrap,
+                    <p class="lead mb-4 fs-4 fw-bold">Quickly design and customize responsive mobile-first sites with
+                        Bootstrap,
                         the
                         world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
                         responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -57,7 +70,7 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
 
-            
+
                             <div class="swiper-slide">
                                 <div class="card mb-4 rounded-3 shadow-sm">
                                     <div class="card-header py-3">
@@ -74,7 +87,7 @@
                                 </div>
                             </div>
 
-                     
+
                             <div class="swiper-slide">
                                 <div class="card mb-4 rounded-3 shadow-sm">
                                     <div class="card-header py-3">
@@ -91,7 +104,7 @@
                                 </div>
                             </div>
 
-                        
+
                             <div class="swiper-slide">
                                 <div class="card mb-4 rounded-3 shadow-sm">
                                     <div class="card-header py-3">
@@ -187,7 +200,7 @@
         </div>
 
 
-        <section class="container  shadow-lg pt-4">
+        <section class="container  shadow-lg pt-4" id="predicas">
             <h2 class="text-center mb-4" style="color: #363636;">Prédicas Recientes</h2>
             <div class="row">
                 <!-- Predica 1 -->
@@ -267,14 +280,22 @@
             <div class="container shadow-lg pt-4 pb-3">
                 <h2 class="text-center mb-3" style="color: #ffffff;">Galeria De Fotos</h2>
                 <div class="gallery">
-                    <div class="controll_img_galery"><img src="./img/ccpv (22).jpeg" class="border" alt="Imagen 1" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (16).jpeg" class="border" alt="Imagen 2" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (24).jpeg" class="border" alt="Imagen 3" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (25).jpeg" class="border" alt="Imagen 4" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (2).jpeg" class="border" alt="Imagen 5" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (26).jpeg" class="border" alt="Imagen 6" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (28).jpeg" class="border img_mas" alt="Imagen 7" onclick="expandImage(this)"></div>
-                    <div class="controll_img_galery"><img src="./img/ccpv (14).jpeg" class="border img_mas" alt="Imagen 8" onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (22).jpeg" class="border" alt="Imagen 1"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (16).jpeg" class="border" alt="Imagen 2"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (24).jpeg" class="border" alt="Imagen 3"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (25).jpeg" class="border" alt="Imagen 4"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (2).jpeg" class="border" alt="Imagen 5"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (26).jpeg" class="border" alt="Imagen 6"
+                            onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (28).jpeg" class="border img_mas"
+                            alt="Imagen 7" onclick="expandImage(this)"></div>
+                    <div class="controll_img_galery"><img src="./img/ccpv (14).jpeg" class="border img_mas"
+                            alt="Imagen 8" onclick="expandImage(this)"></div>
 
                 </div>
 
@@ -292,7 +313,7 @@
             <div class="swiper mySwiper">
                 <h2 class="text-center mb-3" style="color: #3d3d3d;">Reflexiones</h2>
                 <div class="swiper-wrapper">
-                    <!-- Tarjeta Martes -->
+             
                     <div class="swiper-slide">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card">
@@ -310,7 +331,7 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Miércoles -->
+                  
                     <div class="swiper-slide">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card">
@@ -328,7 +349,7 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Viernes -->
+            
                     <div class="swiper-slide">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card">
@@ -346,7 +367,7 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Domingo -->
+       
                     <div class="swiper-slide">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card">
@@ -610,7 +631,6 @@
 
 
 </html>
-
 
 
 </html>
