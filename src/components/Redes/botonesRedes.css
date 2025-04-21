@@ -1,0 +1,162 @@
+.social-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.social-toggle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.social-toggle-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.social-buttons.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    animation: fadeInUp 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.social-buttons.visible .social-button {
+    opacity: 1;
+}
+
+.social-button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.social-text {
+    margin-left: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+    display: none;
+}
+
+/* Efecto expandido */
+.social-buttons-container.expanded .social-button {
+    width: auto;
+    padding: 0 25px;
+    border-radius: 30px;
+    justify-content: flex-start;
+}
+
+.social-buttons-container.expanded .social-text {
+    display: inline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .social-buttons-container {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .social-toggle-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .social-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-buttons-container.expanded .social-button {
+        padding: 0 20px;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+    }
+
+    .social-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-buttons-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .social-toggle-button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .social-button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-buttons-container.expanded .social-button {
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,189 @@
+
+.explanations-section {
+    background-color: #f8f9fa;
+    position: relative;
+  }
+
+  .section-header {
+    position: relative;
+  }
+
+  .explanations-section .section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .explanations-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #e1306c, #f77737);
+  }
+
+  .section-subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+
+  .accordion-container {
+    margin: 0 auto;
+  }
+
+  .explanation-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .explanation-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .explanation-header {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .explanation-header.active {
+    background-color: #2c3e50;
+  }
+
+  .explanation-header:hover {
+    opacity: 0.9;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .explanation-icon {
+    font-size: 1.5rem;
+    display: flex;
+  }
+
+  .explanation-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .explanation-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .explanation-header.active .explanation-arrow {
+    transform: rotate(180deg);
+  }
+
+  .explanation-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: white;
+  }
+
+  .explanation-content.show {
+    max-height: 500px;
+  }
+
+  .content-body {
+    padding: 1.5rem;
+  }
+
+  .content-body p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .bible-verse {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #f1f3f4;
+    border-radius: 5px;
+    color: #2c3e50;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 991.98px) {
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .explanation-title {
+      font-size: 1.1rem;
+    }
+    
+    .explanation-header {
+      padding: 1.25rem;
+    }
+    
+    .content-body {
+      padding: 1.25rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+    }
+    
+    .header-content {
+      gap: 0.75rem;
+    }
+    
+    .explanation-icon {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .section-title {
+      font-size: 1.4rem;
+    }
+    
+    .section-subtitle {
+      display: none;
+    }
+    
+    .explanation-header {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .header-content {
+      width: 100%;
+    }
+    
+    .explanation-arrow {
+      align-self: flex-end;
+    }
+  }

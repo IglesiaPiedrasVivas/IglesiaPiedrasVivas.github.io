@@ -1,0 +1,229 @@
+.vision-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.vision-button-container .vision-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.vision-button-container .vision-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #9d50bb, #6e48aa);
+}
+
+.vision-button-container .vision-tooltip {
+  position: absolute;
+  left: 70px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    left: 75px;
+  }
+}
+
+/* Responsive */
+
+
+@media (max-width: 768px) {
+  .vision-button-container .vision-button {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+
+  .vision-button-container .vision-tooltip {
+    font-size: 0.8rem;
+    left: 60px;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      left: 65px;
+    }
+  }
+
+  .vision-button-container {
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .vision-button-container {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .vision-button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+
+
+.vision-button-container .vision-modal .modal-content {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 85vh;
+  width: 90% !important;
+  margin: auto;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.vision-button-container .modal-header-custom {
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  color: white;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+element.style {
+  height: 80vh;
+}
+
+.vision-year {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.vision-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.modal-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.vision-button-container .btn-fullscreen,
+.vision-button-container .btn-close-custom {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.vision-button-container.btn-fullscreen:hover,
+.vision-button-container .btn-close-custom:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.modal-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.modal-image-container img {
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+}
+
+.modal-footer-custom {
+  border-top: none;
+  background-color: #f8f9fa;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+.vision-button-container .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+}
+
+.vision-button-container .btn-primary {
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+}
+
+/* Pantalla completa */
+.vision-modal.fullscreen .modal-dialog {
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+.vision-modal .fullscreen .modal-content {
+  border-radius: 0;
+  height: 100%;
+}
+
+.vision-modal .fullscreen .modal-image-container img {
+  max-height: calc(2vh - 120px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-header-custom {
+    padding: 1rem;
+  }
+
+  .vision-year {
+    font-size: 1.5rem;
+  }
+
+  .vision-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-footer-custom {
+    padding: 0.75rem;
+  }
+}
+
+
+
+.modal-fullscreen .modal-content {
+  height: 80vh !important;
+  border: 0;
+  margin: auto;
+  width: 90% !important;
+  border-radius: 0;
+}
