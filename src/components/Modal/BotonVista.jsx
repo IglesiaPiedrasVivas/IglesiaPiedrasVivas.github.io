@@ -11,10 +11,10 @@ function BotonVista({ onClick }) {
         onClick={onClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        aria-label="Ver visión 2025"
+        aria-label="Ver visión 2026"
       >
         <FaEye className="vision-icon" />
-        {isHovered && <span className="vision-tooltip">Ver Visión 2025</span>}
+        {isHovered && <span className="vision-tooltip">Ver Visión 2026</span>}
       </button>
 
     </div>

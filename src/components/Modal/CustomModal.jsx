@@ -47,7 +47,7 @@ function CustomModal() {
       >
         <Modal.Header className="modal-header-custom">
           <Modal.Title id="vision-modal-title">
-            <span className="vision-year">2025</span>
+            <span className="vision-year">2026</span>
             <span className="vision-title">Visión CCPV</span>
           </Modal.Title>
           <div className="modal-controls">
@@ -70,8 +70,8 @@ function CustomModal() {
         <Modal.Body className="p-0">
           <div className="modal-image-container">
             <img 
-              src="./img/Expansion.jpg" 
-              alt="Mapa de expansión y visión 2025 de CCPV" 
+              src="./img/Expansion5.png" 
+              alt="Mapa de expansión y visión 2026 de CCPV" 
               className="img-fluid"
               loading="lazy"
             />

@@ -46,7 +46,7 @@ function Predicas() {
         <section className="predicas-section " id="predicas">
             <div className="container py-3 shadow-lg">
                 <div className="section-header text-center mb-1">
-                    <h2 className="section-title mb-3">Prédicas Recientes</h2>
+                    <h2 className="section-title mb-3">Prédicas</h2>
                     <p className="section-subtitle">Escucha las enseñanzas más recientes de nuestra congregación</p>
                 </div>
 

@@ -7,13 +7,13 @@ function Ubicacion() {
 
   return (
     <section className="location-section py-0" id="ubicacion">
-      <div className="container shadow-lg py-2 pb-5 mt-0">
+      <div className="container shadow-lg py-2 pb-5 mt-0 pt-3">
         <div className="section-header text-center mb-0">
           <h2 className="section-title mb-3">Visítanos</h2>
           <p className="section-subtitle mb-0">Te esperamos en nuestro lugar de reunión</p>
         </div>
 
-        <div className="location-container mt-2">
+        <div className="location-container mt-4">
           <div className="location-map">
             {!isMapLoaded && (
               <div className="map-placeholder">
@@ -56,7 +56,7 @@ function Ubicacion() {
               </div>
             </div>
 
-            <div className="info-card">
+            <div className="info-card mb-4">
               <div className="info-icon">
                 <FaPhone />
               </div>

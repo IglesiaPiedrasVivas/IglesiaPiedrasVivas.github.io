@@ -41,7 +41,7 @@ function Hero() {
       id: "sabado_pre", 
       day: "Sábado", 
       title: "Reunión de Pre-Adolescentes", 
-      time: "18:00hs",
+      time: "17:15hs",
       for: "12 a 14 años",
       bgImage: "./img/reunion/reunion2.jpeg"
     },
@@ -49,7 +49,7 @@ function Hero() {
       id: "sabado_jovenes", 
       day: "Sábado", 
       title: "Reunión de Jóvenes", 
-      time: "18:00hs",
+      time: "18:15hs",
       for: "+15 años",
       bgImage: "./img/reunion/reunion1.jpeg"
     },

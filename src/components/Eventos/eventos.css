@@ -1,7 +1,7 @@
 /* Sección General */
 .events-section {
   padding: 3rem 0;
-  background-color: #f8f9fa;
+  /* Mantenemos tu color o el bg-dark que pusiste en el HTML */
 }
 
 .events-section .section-title {
@@ -12,7 +12,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* El decorador con tus colores degradados */
 .events-section .section-title::after {
   content: '';
   position: absolute;
@@ -24,18 +23,15 @@
   background: linear-gradient(90deg, #e1306c, #f77737);
 }
 
-.section-subtitle {
-  color: #7f8c8d;
-  margin-top: 10px;
-}
-
-/* Grid de 2x2 forzado */
+/* GRID: CORRECCIÓN DE TAMAÑO */
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 0 10px;
-  max-width: 1000px;
+  /* En PC: 4 columnas para que ocupen todo el ancho */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1.5rem;
+  padding: 0 15px;
+  /* Subimos el max-width para que no se vean chiquitas en monitores grandes */
+  max-width: 1400px; 
   margin: 0 auto;
 }
 
@@ -47,7 +43,7 @@
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  aspect-ratio: 3 / 4; /* Formato flyer vertical */
+  aspect-ratio: 3 / 4; 
 }
 
 .event-card-simple:hover {
@@ -61,13 +57,10 @@
   display: block;
 }
 
-/* Overlay al pasar el mouse (o tocar en móvil) */
+/* Overlay */
 .event-hover-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
@@ -86,71 +79,50 @@
   padding: 8px 15px;
   border: 1.5px solid white;
   border-radius: 50px;
-  font-size: 0.9rem;
 }
 
-/* Lightbox / Modal */
+/* Lightbox */
 .event-lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0; width: 100%; height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10000;
   padding: 15px;
-  animation: fadeIn 0.3s ease;
 }
 
 .event-lightbox img {
   max-width: 100%;
-  max-height: 85vh;
+  max-height: 90vh;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 3.5rem;
-  line-height: 1;
+  top: 20px; right: 30px;
+  background: none; border: none;
+  color: white; font-size: 3.5rem;
   cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+/* --- RESPONSIVE --- */
 
-/* Responsive Desktop */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .events-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 en linea en PC */
-    gap: 1.5rem;
+    /* En tablets y móviles: forzamos el 2x2 */
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
   }
 }
 
-/* Responsive Móvil */
 @media (max-width: 576px) {
   .events-grid {
-    grid-template-columns: repeat(2, 1fr); /* Mantiene 2x2 */
-    gap: 0.8rem;
+    gap: 10px;
+    padding: 0 10px;
   }
-  
-  .section-title {
-    font-size: 1.6rem;
-  }
-  
   .event-hover-overlay span {
     font-size: 0.7rem;
-    padding: 5px 10px;
   }
 }
