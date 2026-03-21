@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './predicas.css'
+import { FaYoutube } from 'react-icons/fa';
 
 function Predicas() {
     const [visibleCards, setVisibleCards] = useState(3);
@@ -8,44 +9,28 @@ function Predicas() {
     const predicas = [
         {
             id: 1,
-            titulo: "El Amor de Dios",
-            fecha: "10/10/2023",
-            predicador: "Juan Pérez",
-            duracion:"20min",
-            audioSrc: "./predica/Boca (online-audio-converter.com).mp3"
+            titulo: "Isaias 49",
+            fecha: "23/04/2025",
+            predicador: "Jessica Lopez",
+            duracion: "21min",
+            audioSrc: "./predica/isaias49-jessi.mp3"
         },
         {
             id: 2,
-            titulo: "La Fe en Acción",
-            fecha: "15/10/2023",
-            predicador: "María Gómez",
-            duracion:"20min",
-            audioSrc: "predica2.mp3"
+            titulo: "Santa Cena",
+            fecha: "20/04/2025",
+            predicador: "Gustavo Farias",
+            duracion: "20min",
+            audioSrc: "./predica/isaias-pastor.mp3"
         },
         {
             id: 3,
             titulo: "El Perdón",
-            fecha: "20/10/2023",
-            predicador: "Pedro López",
-            duracion:"20min",
-            audioSrc: "predica3.mp3"
+            fecha: "17/04/2025",
+            predicador: "Luis Hernandez",
+            duracion: "30min",
+            audioSrc: "./predica/isaias-luis.mp3"
         },
-        {
-            id: 4,
-            titulo: "Vida en Cristo",
-            fecha: "25/10/2023",
-            predicador: "Ana Rodríguez",
-            duracion:"20min",
-            audioSrc: "predica4.mp3"
-        },
-        {
-            id: 5,
-            titulo: "La Oración Poderosa",
-            fecha: "30/10/2023",
-            predicador: "Carlos Martínez",
-            duracion:"20min",
-            audioSrc: "predica5.mp3"
-        }
     ];
 
     const toggleAudio = (audioId) => {
@@ -56,9 +41,6 @@ function Predicas() {
         }
     };
 
-    const loadMore = () => {
-        setVisibleCards(prev => prev + 2);
-    };
 
     return (
         <section className="predicas-section " id="predicas">
@@ -86,15 +68,15 @@ function Predicas() {
                                         <p><i className="bi bi-person-fill me-2"></i> <strong>Predicador:</strong> {predica.predicador}</p>
                                         <p><i className="bi bi-alarm me-2"></i> <strong>Duracion:</strong> {predica.duracion}</p>
                                     </div>
-                                    
+
                                     <div className={`audio-player ${activeAudio === predica.id ? 'expanded' : ''}`}>
                                         <audio controls id={`audio-${predica.id}`} className="w-100">
-                                            <source src={predica.audioSrc} type="audio/mpeg"/>
+                                            <source src={predica.audioSrc} type="audio/mpeg" />
                                             Tu navegador no soporta audio.
                                         </audio>
                                     </div>
-                                    
-                                    <button 
+
+                                    <button
                                         className="btn-play mt-3 w-100"
                                         onClick={() => toggleAudio(predica.id)}
                                     >
@@ -107,19 +89,20 @@ function Predicas() {
                     ))}
                 </div>
 
-                {visibleCards < predicas.length && (
-                    <div className="text-center mt-0">
-                    <button 
-                      className="btn btn-predicas"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={loadMore}
+
+                <div className="text-center mt-2">
+                    <a
+                        href="https://youtube.com/@ccpv600?si=JZLxg-sJgSS6RNE2"
+                        className="btn btn-predicas"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
                     >
-                      <i className="bi bi-arrow-down-circle me-2"></i>
-                      Ver más prédicas
-                    </button>
-                  </div>
-                )}
+                        <FaYoutube className='fs-5 me-1' />
+                        Ver más prédicas
+                    </a>
+                </div>
+
             </div>
         </section>
     );

@@ -16,20 +16,41 @@ function Hero() {
       day: "Miércoles", 
       title: "Reunión Grupo de Conexión", 
       time: "19:00hs",
+      for: "Para todos",
       bgImage: "./img/reunion/reunion4.jpeg"
     },
+    { 
+      id: "sabado_escuelita", 
+      day: "Sábado", 
+      title: "Escuela Biblica", 
+      time: "15:00hs",
+      for: "3 a 11 años",
+      bgImage: "./img/reunion/reunion5.jpeg"
+    },
+    /*
+    { 
+      id: "sabado_escuela_de_vida", 
+      day: "Sábado", 
+      title: "Escuela de Ministerio", 
+      time: "17:00hs",
+      for: "+12 años",
+      bgImage: "./img/reunion/reunion6.jpeg"
+    },
+    */
     { 
       id: "sabado_pre", 
       day: "Sábado", 
       title: "Reunión de Pre-Adolescentes", 
       time: "18:00hs",
+      for: "12 a 14 años",
       bgImage: "./img/reunion/reunion2.jpeg"
     },
     { 
       id: "sabado_jovenes", 
       day: "Sábado", 
       title: "Reunión de Jóvenes", 
-      time: "19:00hs",
+      time: "18:00hs",
+      for: "+15 años",
       bgImage: "./img/reunion/reunion1.jpeg"
     },
     { 
@@ -37,13 +58,15 @@ function Hero() {
       day: "Domingo", 
       title: "Reunión de Oración", 
       time: "08:00hs",
+      for: "Para todos",
       bgImage: "./img/reunion/reunion3.jpeg"
     },
     { 
       id: "domingo_general", 
       day: "Domingo", 
       title: "Reunión General", 
-      time: "19:00hs",
+      time: "18:00hs",
+      for: "Para todos",
       bgImage: "./img/reunion/reunion.jpeg"
     }
   ];

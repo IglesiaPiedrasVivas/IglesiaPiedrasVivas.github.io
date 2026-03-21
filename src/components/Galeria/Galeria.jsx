@@ -35,9 +35,9 @@ function Galeria() {
 
   return (
     <section className="gallery-section  bg-dark ">
-      <div className="container shadow-lg py-3 pt-4">
+      <div className="container  py-3 pt-4">
         <div className="section-header text-center mb-1 mt-1">
-          <h2 className="section-title text-light">Galería de Fotos</h2>
+          <h2 className="section-title text-light mb-1">Galería de Fotos</h2>
           <p className="section-subtitle">Momentos especiales de nuestra congregación</p>
         </div>
 

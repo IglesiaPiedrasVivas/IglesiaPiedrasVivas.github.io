@@ -33,16 +33,10 @@ function App() {
         <Carrucel/>
         <Predicas />
         <Galeria />
-        <Reflexiones />
-        <Explicaciones />
-
-        {/*
-        
-        
         <Footer />
         
         
-        */}
+        
 
       </main>
 

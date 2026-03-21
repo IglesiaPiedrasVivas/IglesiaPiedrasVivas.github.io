@@ -9,7 +9,7 @@ function Ubicacion() {
     <section className="location-section py-0" id="ubicacion">
       <div className="container shadow-lg py-2 pb-5 mt-0">
         <div className="section-header text-center mb-0">
-          <h2 className="section-title mb-2">Visítanos</h2>
+          <h2 className="section-title mb-3">Visítanos</h2>
           <p className="section-subtitle mb-0">Te esperamos en nuestro lugar de reunión</p>
         </div>
 
@@ -51,7 +51,7 @@ function Ubicacion() {
               <div className="info-content">
                 <h3>Horarios</h3>
                 <p>Miércoles: 19:00hs (Grupo de Conexión)</p>
-                <p>Sábado: 18:00hs (Pre-Adolescentes) / 19:00hs (Jóvenes)</p>
+                <p>Sábado: 18:00hs (Pre-Adolescentes) / 18:00hs (Jóvenes)</p>
                 <p>Domingo: 08:00hs (Oración) / 19:00hs (Reunión General)</p>
               </div>
             </div>
@@ -62,8 +62,7 @@ function Ubicacion() {
               </div>
               <div className="info-content">
                 <h3>Contacto</h3>
-                <p>Tel: (011) 1234-5678</p>
-                <p>Email: info@piedrasvivas.com</p>
+                <p>Email: centropiedrasvivas@gmail.com</p>
               </div>
             </div>
 
