@@ -56,7 +56,7 @@ function Ubicacion() {
               </div>
             </div>
 
-            <div className="info-card mb-4">
+            <div className="info-card mb-2">
               <div className="info-icon">
                 <FaPhone />
               </div>
