@@ -2,9 +2,12 @@ import React from 'react';
 
 function Footer() {
     return (
+        
         // Usamos un color oscuro similar al de tu diseño. Puedes ajustar el hex en el style si bg-dark no es exacto.
-        <footer className="bg-dark text-white pt-5 pb-4" style={{ backgroundColor: '#1b1e22' }}>
-            <div className="container">
+        <footer className="bg-dark text-white pt-2 pb-4" style={{ backgroundColor: '#1b1e22' }}>
+
+            <div className="container pt-4">
+            
                 <div className="row">
                     
                     {/* Columna 1: Logo, Descripción y Redes Sociales */}
@@ -18,19 +21,19 @@ function Footer() {
 
                             <h5 className="mb-0 ms-2 lh-sm fw-normal">Centro Cristiano<br/>Piedras Vivas</h5>
                         </div>
-                        <p className="text-secondary small mt-3">
+                        <p className="text-secondary small mt-3 fs-6">
                             Una comunidad de fe donde cada vida es transformada por el amor de Cristo.
                         </p>
                         
                         {/* Redes Sociales con colores personalizados */}
                         <div className="d-flex gap-3 mt-4">
-                            <a href="#" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', backgroundColor: '#ff0000' }}>
+                            <a href="https://youtube.com/@ccpv600?si=JZLxg-sJgSS6RNE2" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', backgroundColor: '#ff0000' }}>
                                 <i className="bi bi-youtube"></i>
                             </a>
-                            <a href="#" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
+                            <a href="https://www.instagram.com/iglesia.piedrasvivas?igsh=NjV4OGhkYjlteG5n" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
                                 <i className="bi bi-instagram"></i>
                             </a>
-                            <a href="#" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', backgroundColor: '#3b5998' }}>
+                            <a href="https://www.facebook.com/share/1HGiMfkfdb/?mibextid=qi2Omg" className="d-flex justify-content-center align-items-center rounded-circle text-white text-decoration-none" style={{ width: '35px', height: '35px', backgroundColor: '#3b5998' }}>
                                 <i className="bi bi-facebook"></i>
                             </a>
                         </div>
@@ -43,11 +46,11 @@ function Footer() {
                         <div style={{ width: '30px', height: '2px', backgroundColor: '#dc3545', marginBottom: '1.5rem' }}></div>
                         
                         <ul className="list-unstyled d-flex flex-column gap-2">
-                            <li><a href="#" className="text-secondary text-decoration-none">Inicio</a></li>
-                            <li><a href="#" className="text-secondary text-decoration-none">Ubicacion</a></li>
-                            <li><a href="#" className="text-secondary text-decoration-none">Predicas</a></li>
-                            <li><a href="#" className="text-secondary text-decoration-none">Reflexiones</a></li>
-                            <li><a href="#" className="text-secondary text-decoration-none">Explicaciones</a></li>
+                            <li><a href="#hero" className="text-secondary text-decoration-none">Inicio</a></li>
+                            <li><a href="#ubicacion" className="text-secondary text-decoration-none">Ubicacion</a></li>
+                            <li><a href="#predicas" className="text-secondary text-decoration-none">Predicas</a></li>
+                            <li><a href="#reflexiones" className="text-secondary text-decoration-none">Reflexiones</a></li>
+                            <li><a href="#explicaciones" className="text-secondary text-decoration-none">Explicaciones</a></li>
                         </ul>
                     </div>
 
@@ -60,7 +63,7 @@ function Footer() {
                         <ul className="list-unstyled d-flex flex-column gap-3 text-secondary">
                             <li className="d-flex align-items-center gap-3">
                                 <i className="bi bi-geo-alt-fill text-danger fs-6"></i>
-                                <span>Dirección de la iglesia, Ciudad</span>
+                                <span>Colegiales 4950, Gregorio de Laferrere, Buenos Aires</span>
                             </li>
                             <li className="d-flex align-items-center gap-3">
                                 <i className="bi bi-telephone-fill text-danger fs-6"></i>

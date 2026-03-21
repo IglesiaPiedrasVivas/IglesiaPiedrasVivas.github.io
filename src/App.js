@@ -11,6 +11,7 @@ import Explicaciones from './components/Explicaciones/Explicaciones';
 import Footer from './components/Footer';
 import CustomModal from './components/Modal/CustomModal';
 import Carrucel from './components/Carrucel/Carrucel';
+import Eventos from './components/Eventos/Eventos';
 
 
 
@@ -26,7 +27,7 @@ function App() {
       <CustomModal />
       <div class="espacio"></div>
 
-
+      <Eventos/>
       <Ubicacion />
 
       <main class="container-fluid p-0">

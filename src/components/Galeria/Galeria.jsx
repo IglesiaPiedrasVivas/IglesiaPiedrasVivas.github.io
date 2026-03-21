@@ -36,7 +36,7 @@ function Galeria() {
   return (
     <section className="gallery-section  bg-dark ">
       <div className="container  py-3 pt-4">
-        <div className="section-header text-center mb-1 mt-1">
+        <div className="section-header text-center mb-4 mt-1">
           <h2 className="section-title text-light mb-1">Galería de Fotos</h2>
           <p className="section-subtitle">Momentos especiales de nuestra congregación</p>
         </div>
@@ -100,6 +100,8 @@ function Galeria() {
           </a>
         </div>
 
+        
+
         {/* Modal para imagen ampliada */}
         <Modal 
           show={showModal} 
@@ -123,7 +125,9 @@ function Galeria() {
             </button>
           </Modal.Body>
         </Modal>
+        
       </div>
+      
 
      
     </section>
